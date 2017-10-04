@@ -3,15 +3,15 @@
 	==
 	run the whole shabang with `$ gulp watch` in the project directory
 	install them all with
-	`$ npm i gulp gulp-sass gulp-concat gulp-rename gulp-uglify browser-sync --save-dev`
+	`$ npm i gulp gulp-sass gulp-concat gulp-rename gulp-uglify browser-sync -D
 */
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
 
 // compiles sass files to css
 gulp.task('sass', function () {
